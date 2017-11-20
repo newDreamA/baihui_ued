@@ -1,0 +1,236 @@
+/*
+* @Author: tangxiewen
+* @Date:   2017-11-06 10:30:30
+* @Last Modified by:   tangxiewen
+* @Last Modified time: 2017-11-07 13:55:40
+*/
+.main-category-menu {
+    width: 240px;
+    height:380px;
+    position: relative;
+    z-index: 2;
+    background:rgba(131,131,131,0.3);
+    top: 10px;
+    float: left;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.main-category-menu .category {
+    cursor: pointer;
+    position: relative;
+}
+.main-category-menu .category :hover{
+    background:rgba(100,100,100,0.6);
+}
+.main-category-menu .category .group{
+    position: relative;
+    height: 75px;
+    line-height:75px;
+    font-size: 16px;
+    color: #FFF;
+    width: 190px;
+    margin-left: 25px;
+    padding-left: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ADB0B4;
+}
+
+
+.main-category-submenu-content{
+    background-color:#FDFDFD;
+    width: 350px;
+    height: 400px;
+    margin-left:218px;
+    position:relative;
+    z-index:2;
+    top:-315px;
+    display: none;
+    padding: 30px 20px;
+    border-radius:4px;
+    box-shadow: 2px 2px 5px #ADB0B4;
+}
+.main-category-submenu-content .submenu-title{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    z-index:2;
+}
+
+.main-category-submenu-content .submenu-item{
+    display:inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.main-category-submenu-content a{
+    color: #000;
+}
+.main-category-submenu-content a:HOVER{
+    color: #0089D2;
+}
+
+/* banner-con */
+.banner-con{
+    width: 830px;
+    float: left;
+    height: 370px;
+    background: #eee;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.banner-con .loading{
+    margin-top: 150px;
+}
+.banner-con .banner-img{
+    width: 100%;
+    height: 370px;
+}
+/* banner的前一张和后一张按钮 */
+.banner-con .banner-arrow{
+    position: absolute; 
+    top:160px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: #ccc;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.banner-con .banner-arrow:hover{
+    background: #aaa;
+    background: rgba(0,0,0,.5);
+}
+.banner-con .banner-arrow.prev{
+    left: 0;
+}
+.banner-con .banner-arrow.next{
+    right: 0;
+}
+
+/* floor */
+.floor-wrap .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color: #d58717;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #d58717;
+}
+/* 更改各楼层标题颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 1px solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-list{
+    margin-right: -20px;
+    overflow: hidden;
+}
+.floor-wrap .floor-list .floor-item{
+    position: relative;
+    width: 200px;
+    height: 220px;
+    margin: 15px 20px 15px 0;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 7px #ddd;
+}
+.floor-wrap .floor-list .floor-item .floor-text{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-img{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 80%;
+    height: 75%;
+    border: none;
+}
+
+
+.menuContent {
+    position: relative;
+    float: left;
+    width: 216px;
+    height: 400px;
+    z-index: 2;
+    padding-top: 15px;
+    background: #2b333b;
+    border-bottom-left-radius: 4px;
+    font-weight: 200
+}
+
+.menuContent .item .box a:hover {
+    color: #f01414 !important
+}
+
+.menuContent .item {
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 12px;
+    position: relative;
+}
+
+.menuContent .item>a {
+    display: block;
+    color: rgba(255, 255, 255, .6);
+    padding: 0 15px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 60px;
+    transition: all .1s;
+    text-decoration: none;
+
+}
+
+.menuContent .item i {
+    position: absolute;
+    right: 16px;
+    top: 24px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px
+}
+
+.menuContent .item .box a {
+    color: #fff !important
+}
+
+.menuContent .js-menu-item-on a {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.g-banner {
+    position: relative;
+    overflow: hidden;
+    width: 1080px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top:10px;
+}
+
