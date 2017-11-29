@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 11:15:04
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-06 13:20:31
+* @Last Modified time: 2017-11-29 14:36:28
 */
 /*
 * @Author: tangxiewen
@@ -29,7 +29,7 @@ var _commonUtil = {
             success     : function(res){
                 // 请求成功
                 if(0 === res.status){
-                    typeof param.success === 'function' && param.success(res.data, res.msg);
+                    typeof param.success === 'function' && param.success(res, res.msg);
                 }
                 // 没有登录状态，需要强制登录
                 else if(10 === res.status){

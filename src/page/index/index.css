@@ -2,44 +2,14 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 10:30:30
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-07 13:55:40
+* @Last Modified time: 2017-11-29 17:12:31
 */
-.main-category-menu {
-    width: 240px;
-    height:380px;
-    position: relative;
-    z-index: 2;
-    background:rgba(131,131,131,0.3);
-    top: 10px;
-    float: left;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-.main-category-menu .category {
-    cursor: pointer;
-    position: relative;
-}
-.main-category-menu .category :hover{
-    background:rgba(100,100,100,0.6);
-}
-.main-category-menu .category .group{
-    position: relative;
-    height: 75px;
-    line-height:75px;
-    font-size: 16px;
-    color: #FFF;
-    width: 190px;
-    margin-left: 25px;
-    padding-left: 15px;
-    vertical-align: middle;
-    border-bottom: 1px solid #ADB0B4;
-}
 
 
 .main-category-submenu-content{
     background-color:#FDFDFD;
     width: 350px;
-    height: 400px;
+    height: 311px;
     margin-left:218px;
     position:relative;
     z-index:2;
@@ -63,11 +33,32 @@
     font-size: 14px;
 }
 
+.main-category-submenu-content .banner-line{
+    position: relative;
+    height: 1px;
+    margin: 5px 0 23px;
+    background-color: rgba(77, 85, 93, .08)
+}
+.main-category-submenu-content .banner-line span {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 36px;
+    font-size: 12px;
+    color: #07111B;
+    line-height: 24px;
+    background-color: #fff
+}
+
 .main-category-submenu-content a{
     color: #000;
+    text-decoration: none;
 }
 .main-category-submenu-content a:HOVER{
     color: #0089D2;
+}
+.bold {
+    font-weight: 700 !important
 }
 
 /* banner-con */
@@ -76,7 +67,6 @@
     float: left;
     height: 370px;
     background: #eee;
-    margin-top: 10px;
     margin-left: 6px;
 }
 .banner-con .loading{
@@ -174,7 +164,7 @@
     position: relative;
     float: left;
     width: 216px;
-    height: 400px;
+    height: 356px;
     z-index: 2;
     padding-top: 15px;
     background: #2b333b;
@@ -219,6 +209,11 @@
     color: #fff !important
 }
 
+.menuContent .group{
+    font-size: 16px;
+   
+}
+
 .menuContent .js-menu-item-on a {
     color: #fff;
     background-color: rgba(255, 255, 255, .3)
@@ -226,7 +221,6 @@
 
 .g-banner {
     position: relative;
-    overflow: hidden;
     width: 1080px;
     margin: auto;
     background-color: #fff;

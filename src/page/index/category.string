@@ -1,0 +1,36 @@
+  <%if(data && data.length){
+     for(var i in data){
+       var category = data[i];%>
+       <div class="item" data-id="<%= category.id %>">
+            <a href="/course/list?c=fe" target="_blank">
+                <span class="group"><%= category.name%></span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+     </div>       
+
+<% }}%>
+
+  <%if(data && data.length){
+     for(var i in data){
+       var category = data[i];%>
+    <div class="main-category-submenu-content" id="<%=category.id%>" >
+    <div class="subinnerBox">
+    <div class="banner-line">
+       <span class="bold mr10 l small-title">分类</span>
+    </div>
+    <div>
+    <%if(category.subClassifyList && category.subClassifyList.length){
+       var subClassifyList = category.subClassifyList;
+        
+       for(var j in subClassifyList){
+        var subClassifyItem = subClassifyList[j];
+     %>
+
+  
+      <a class='submenu-item' target="_blank" href="#"> <%=subClassifyItem.name%></a>
+      
+    <%}}%>
+     </div>
+     </div>
+</div>
+    <% }}%>

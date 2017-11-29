@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 10:30:18
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-07 13:29:27
+* @Last Modified time: 2017-11-29 15:45:52
 */
 'use strict';
 require('./index.css');
@@ -11,7 +11,9 @@ require('util/slider/index.js');
 
 require('util/bootstrap/index.js');
 var templateBanner  = require('./banner.string');
+var templateCategory = require('./category.string');
 var _mm             = require('util/commonUtil.js');
+var _category = require('service/category-service');
 
 $(function() {
     // 渲染banner的html
@@ -27,9 +29,11 @@ $(function() {
         $slider.data('unslider')[forward]();
     });
 
-
-
-    //课程分类展示-start
+    _category.getAllCategories(function(res){
+    $(".item").popover('destroy')
+      var categoryHtml = _mm.renderHtml(templateCategory,res);
+      $('.menuContent').html(categoryHtml);
+       //课程分类展示-start
     $(".item").popover({
             trigger:'manual',
             placement : 'right',
@@ -49,4 +53,12 @@ $(function() {
             $('#' + cid).hide();
         });
         //课程分类展示-end
+
+    },function(errMsg){
+         _mm.errorTips(errMsg);
+
+    });
+
+
+   
 });
