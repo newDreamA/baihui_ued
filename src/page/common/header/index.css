@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 19:29:17
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-29 10:21:34
+* @Last Modified time: 2017-12-02 12:41:04
 */
 
 /* 通用头部导航 */
@@ -77,7 +77,7 @@
     text-decoration:none;
 
 }
-
+ .selected{font-weight:bold; background: #0bc;}
 .nav-item .active{
     background-color: #4593FD;
 }

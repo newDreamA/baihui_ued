@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 10:30:18
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-29 15:45:52
+* @Last Modified time: 2017-12-02 12:52:51
 */
 'use strict';
 require('./index.css');
@@ -16,6 +16,7 @@ var _mm             = require('util/commonUtil.js');
 var _category = require('service/category-service');
 
 $(function() {
+     $('#home').addClass('selected')
     // 渲染banner的html
     var bannerHtml  = _mm.renderHtml(templateBanner);
     $('.banner-con').html(bannerHtml);
@@ -34,7 +35,7 @@ $(function() {
       var categoryHtml = _mm.renderHtml(templateCategory,res);
       $('.menuContent').html(categoryHtml);
        //课程分类展示-start
-    $(".item").popover({
+     $(".item").popover({
             trigger:'manual',
             placement : 'right',
             html: 'true',

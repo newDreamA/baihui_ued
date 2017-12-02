@@ -1,0 +1,21 @@
+<%if(data.list&&data.list.length){
+  for(var i in data.list){
+   var product = data.list[i];
+%>
+    <li class="p-item">
+        <div class="p-img-con">
+            <a class="link" href="./detail.html?productId=<%=product.id%>" target="_blank">
+                <img class="p-img" src="<%=product.imageHost%><%=product.mainImage%>" alt="<%=product.name%>" />
+            </a>
+        </div>
+        <div class="p-price-con">
+            <span class="p-price">¥<%=product.price%></span>
+        </div>
+        <div class="p-name-con">
+            <a class="p-name" href="./detail.html?productId=<%=product.id%>" target="_blank"><%=product.name%></a>
+        </div>
+    </li>
+<%}}else{%>
+
+    <p class="err-tip">很抱歉，实在找不到您要的商品。</p>
+<%}%>

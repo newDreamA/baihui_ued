@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-10-09 13:39:07
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-11-06 10:30:07
+* @Last Modified time: 2017-12-02 13:01:44
 */
 
 var webpack             = require('webpack');
@@ -27,7 +27,11 @@ var getHtmlConfig = function(name, title){
 var config = {
     entry: {
         'common'                  : ['./src/page/common/index.js'],
-        'index'                   : ['./src/page/index/index.js']
+        'index'                   : ['./src/page/index/index.js'],
+        'list'                   : ['./src/page/list/index.js'],
+        'detail'                   : ['./src/page/detail/index.js'],
+        'about'             : ['./src/page/about/index.js'],
+        'contact'             : ['./src/page/contact/index.js'],
 
 
 
@@ -67,8 +71,12 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // html模板的处理
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-     
+        new HtmlWebpackPlugin(getHtmlConfig('list','商品列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
 
+
+        new HtmlWebpackPlugin(getHtmlConfig('about', '关于百汇制造')),
+        new HtmlWebpackPlugin(getHtmlConfig('contact', '联系我们')),
 
 
 

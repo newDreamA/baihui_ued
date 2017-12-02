@@ -1,0 +1,15 @@
+<div class="pg-content">
+    <%if(pageArray&&pageArray.length){
+      for(var i in pageArray){
+         var page = pageArray[i];
+         if(page.disabled){%>
+        <span class="pg-item disabled" data-value="<%=page.value%>"><%=page.name%></span>
+    <%}else{ if(page.active){%>
+            <span class="pg-item active" data-value="<%=page.value%>"><%=page.name%></span>
+        <%}else{%>
+       
+            <span class="pg-item" data-value="<%=page.value%>"><%=page.name%></span>
+        <%}%>
+    <%}}}%>
+    <span class="pg-total"><%=pageNum%> / <%=pages%></span>
+</div>

@@ -27,7 +27,7 @@
      %>
 
   
-      <a class='submenu-item' target="_blank" href="#"> <%=subClassifyItem.name%></a>
+      <a class='submenu-item' target="_blank" href="./list.html?categoryId=<%=subClassifyItem.id%>"> <%=subClassifyItem.name%></a>
       
     <%}}%>
      </div>
