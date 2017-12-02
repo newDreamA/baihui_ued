@@ -2,12 +2,13 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 10:30:18
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 12:52:51
+* @Last Modified time: 2017-12-02 22:06:54
 */
 'use strict';
 require('./index.css');
 require('page/common/header/index.js');
 require('util/slider/index.js');
+require('page/common/nav/index.js');
 
 require('util/bootstrap/index.js');
 var templateBanner  = require('./banner.string');

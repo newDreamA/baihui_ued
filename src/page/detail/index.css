@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-12-02 10:38:15
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 10:42:25
+* @Last Modified time: 2017-12-02 23:08:18
 */
 .intro-wrap{
     overflow: hidden;
@@ -46,6 +46,11 @@
 .intro-wrap .p-info-con  .p-price-con{
     background: #eee;
     padding: 10px;
+}
+
+.intro-wrap .p-info-con .info-msg{
+  font-size: 15px;
+
 }
 
 .intro-wrap .p-info-con  .p-price-con .info{

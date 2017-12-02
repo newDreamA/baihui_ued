@@ -2,16 +2,18 @@
 * @Author: tangxiewen
 * @Date:   2017-12-02 10:38:25
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 11:30:47
+* @Last Modified time: 2017-12-02 23:47:48
 */
 'use strict';
 
 require('./index.css');
+require('page/common/nav/index.js');
+
 require('page/common/header/index.js');
 var _mm             = require('util/commonUtil.js');
 var templateIndex   = require('./detail.string');
 var _product        = require('service/product-service.js');
-//var _cart           = require('service/cart-service.js');
+var _cart           = require('service/cart-service.js');
 
 var page = {
     data:{
@@ -50,17 +52,17 @@ var page = {
                 $pCount.val(currCount > minCount ? currCount - 1 : minCount);
             }
         });
-        // 加入购物车
-        // $(document).on('click', '.cart-add', function(){
-        //     _cart.addToCart({
-        //         productId   : _this.data.productId,
-        //         count       : $('.p-count').val()
-        //     }, function(res){
-        //         window.location.href = './result.html?type=cart-add';
-        //     }, function(errMsg){
-        //         _mm.errorTips(errMsg);
-        //     });
-        // });
+       // 加入购物车
+        $(document).on('click', '.cart-add', function(){
+            _cart.addToCart({
+                productId   : _this.data.productId,
+                count       : $('.p-count').val()
+            }, function(res){
+                window.location.href = './result.html?type=cart-add';
+            }, function(errMsg){
+                _mm.errorTips(errMsg);
+            });
+        });
     },
     loadDetail:function(){
         var _this = this,html = '',

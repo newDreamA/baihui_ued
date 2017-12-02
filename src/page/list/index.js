@@ -2,15 +2,18 @@
 * @Author: tangxiewen
 * @Date:   2017-12-02 08:42:45
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 10:10:50
+* @Last Modified time: 2017-12-03 01:07:07
 */
 'use strict';
 require('./index.css');
 require('page/common/header/index.js');
+require('page/common/nav/index.js');
+
 var _mm             = require('util/commonUtil.js');
 var _product        = require('service/product-service.js');
 var Pagination      = require('util/pagination/index.js');
 var templateIndex   = require('./list.string');
+
 
 var page = {
     data : {

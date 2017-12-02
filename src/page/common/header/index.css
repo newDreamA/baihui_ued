@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 19:29:17
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 12:41:04
+* @Last Modified time: 2017-12-02 21:51:18
 */
 
 /* 通用头部导航 */
@@ -57,27 +57,25 @@
     float: left;
 }
 
-.nav{
-    
-}
-.nav-item {
+.menu-item {
     line-height: 35px;
     font-size: 16px; 
     text-align: center;
 }
 
-.nav-item li{
+.menu-item li{
     float: left;
 }
 
-.nav-item a{
+.menu-item a{
     line-height: 35px;
     display: inline-block;
     padding: 0 25px;
     text-decoration:none;
 
 }
- .selected{font-weight:bold; background: #0bc;}
-.nav-item .active{
+ 
+.menu-item .active{
     background-color: #4593FD;
 }
+.selected{font-weight:bold; background: #0bc;}

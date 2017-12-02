@@ -2,7 +2,7 @@
      for(var i in data){
        var category = data[i];%>
        <div class="item" data-id="<%= category.id %>">
-            <a href="/course/list?c=fe" target="_blank">
+            <a href="#" target="_blank">
                 <span class="group"><%= category.name%></span>
                 <i class="fa fa-angle-right"></i>
             </a>

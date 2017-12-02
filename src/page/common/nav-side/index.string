@@ -1,0 +1,13 @@
+<%for(var i in navList){
+ var nav = navList[i];
+ if(nav.isActive){
+%>
+
+<li class="nav-item active">
+<%}else{%>
+
+<li class="nav-item">
+<%}%>
+    <a class="link" href="<%=nav.href%>"><%=nav.desc%></a>
+</li>
+<%}%>

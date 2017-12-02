@@ -21,12 +21,13 @@
         <p class="p-subtitle"><%=data.subtitle%></p>
         <div class="p-info-item p-price-con">
             <span class="label">价格:</span>
-            <span class="info">￥<%=data.price%></span>
+           <span class="info" style="display: none">￥<%=data.price%></span>
+            <span class="info">面议</span>
         </div>
-        <div class="p-info-item">
+        <!--<div class="p-info-item">
             <span class="label">库存:</span>
             <span class="info"><%=data.stock%></span>
-        </div>
+        </div>-->
         <div class="p-info-item p-count-con">
             <span class="label">数量:</span>
             <input class="p-count" value="1" readonly=""/>
@@ -34,8 +35,13 @@
             <span class="p-count-btn minus">-</span>
         </div>
         <div class="p-info-item">
-            <a class="btn cart-add">加入购物车</a>
+            <a class="btn cart-add">加入意向单</a>
+            <span class="info info-msg"> 加入意向单后，我们会主动联系您！</span>
         </div>
+        <div class="p-info-item">
+         <span class="info info-msg">如需添加意向单，可以先行注册，如果不愿注册可以电话联系：18705146221</span>
+        </div>
+    
     </div>
 </div>
 <div class="detail-wrap">

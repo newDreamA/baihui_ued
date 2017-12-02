@@ -2,7 +2,7 @@
 * @Author: tangxiewen
 * @Date:   2017-11-06 11:15:04
 * @Last Modified by:   tangxiewen
-* @Last Modified time: 2017-12-02 11:26:22
+* @Last Modified time: 2017-12-02 22:28:39
 */
 /*
 * @Author: tangxiewen
@@ -84,7 +84,10 @@ var _commonUtil = {
             return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
         }
     },
-   
+     // 统一登录处理
+    doLogin : function(){
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
+    },
     goHome : function(){
         window.location.href = './index.html';
     }
