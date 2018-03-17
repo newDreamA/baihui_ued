@@ -5,7 +5,7 @@
 * @Last Modified time: 2017-12-02 22:12:22
 */
 'use strict';
-
+require('./index.css');
 require('page/common/header/index.js');
 require('page/common/nav/index.js');
 
