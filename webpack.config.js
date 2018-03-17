@@ -47,8 +47,8 @@ var config = {
 
     },
     output: {
-        path: './dist',
-        publicPath : '/dist',
+        path: __dirname + '/dist/',
+        publicPath : 'dev' === WEBPACK_ENV ? '/dist/':'//s.ycbaihui.cn/baihui_ued/dist/',
         filename: 'js/[name].js'
     },
     externals : {
@@ -58,7 +58,14 @@ var config = {
         loaders: [
             { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader","css-loader") },
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]' },
-            { test: /\.string$/, loader: 'html-loader'}
+            { 
+                test: /\.string$/, 
+                loader: 'html-loader',
+                query:{
+                    minimize : true,
+                    removeAttributeQuotes : false
+                }
+            }
         ]
     },
     resolve : {

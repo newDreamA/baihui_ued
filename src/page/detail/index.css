@@ -26,7 +26,7 @@
 
 .intro-wrap .p-info-con .p-subtitle{
   font-size:15px;
-  color: #c60023;
+  color: #0bc;
   line-height: 30px;
 }
 
@@ -50,11 +50,12 @@
 
 .intro-wrap .p-info-con .info-msg{
   font-size: 15px;
+  color:#999;
 
 }
 
 .intro-wrap .p-info-con  .p-price-con .info{
-    color: #c60023;
+    color: #ff8a00;
    font-size: 18px;
 }
 .intro-wrap .p-info-con .p-count-con .p-count{
@@ -148,7 +149,7 @@ bottom: 0;
    background: #eee;
    border: 1px solid #ddd;
    overflow: hidden;
-   border-bottom: 1px solid #c60023;
+   border-bottom: 1px solid #0bc;
 
 }
 
@@ -165,7 +166,7 @@ bottom: 0;
 }
 
 .detail-wrap .tab-list .tab-item.active{
-    background: #c60023;
+    background: #0bc;
     color: #fff;
 }
 

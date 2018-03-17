@@ -22,8 +22,8 @@
     cursor: pointer;
 }
 .sort-con .sort-item.active{
-    background: #c60023;
-    border: 1px solid #c60023;
+    background: #0bc;
+    border: 1px solid #0bc;
     color: #fff;
 }
 .sort-con .sort-item .fa-sort-desc{
@@ -66,7 +66,7 @@
 }
 .p-list-con .p-item .p-price-con .p-price{
     font-size: 16px;
-    color: #e7380d;
+    color: #ff8a00;
 }
 .p-list-con .p-item .p-name-con{
     height: 40px;
