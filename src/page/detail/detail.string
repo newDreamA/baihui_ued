@@ -21,8 +21,11 @@
         <p class="p-subtitle"><%=data.subtitle%></p>
         <div class="p-info-item p-price-con">
             <span class="label">价格:</span>
-           <span class="info" style="display: none">￥<%=data.price%></span>
+             <%if(data.price !=null){%>
+           <span class="info">￥<%=data.price%></span>
+           <%}else{%>
             <span class="info">面议</span>
+            <%}%>
         </div>
         <!--<div class="p-info-item">
             <span class="label">库存:</span>
@@ -35,11 +38,11 @@
             <span class="p-count-btn minus">-</span>
         </div>
         <div class="p-info-item">
-            <a class="btn cart-add">加入意向单</a>
-            <span class="info info-msg"> 加入意向单后，我们会主动联系您！</span>
+            <a class="btn cart-add">加入购物车</a>
+            <span class="info info-msg"> 加入购物车后，我们会主动联系您！</span>
         </div>
         <div class="p-info-item">
-         <span class="info info-msg">如需添加意向单，可以先行注册，如果不愿注册可以电话联系：18705146221</span>
+         <span class="info info-msg">如果您嫌麻烦可以直接拨打电话：0515-88608868，无需注册</span>
         </div>
     
     </div>
